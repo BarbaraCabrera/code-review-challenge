@@ -47,15 +47,17 @@ public class Picture {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o) { //o isn't descriptive - object
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Picture picture = (Picture) o;
         return Objects.equals(id, picture.id) && Objects.equals(url, picture.url) && quality == picture.quality;
+
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, url, quality);
     }
+
 }
