@@ -3,6 +3,7 @@ package com.idealista.infrastructure.persistence;
 import com.idealista.domain.*;
 import org.springframework.stereotype.Repository;
 
+//import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -113,5 +114,15 @@ public class InMemoryPersistence implements AdRepository {
                 picture.getUrl(),
                 picture.getQuality().name());
     }
+
+    /*private String cleanerDescriptions(Optional<String> optionalDescription){
+
+            String description = optionalDescription.get();
+            description = Normalizer.normalize(description, Normalizer.Form.NFD); //Canonical decomposition
+            description = description.replaceAll("[\\p{InCombiningDiacriticalMarks}]", ""); //Removes accents and all diacritics
+
+            return description.toLowerCase(); //return the description value in lower case
+
+    }*/
 
 }
