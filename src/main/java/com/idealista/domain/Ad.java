@@ -15,6 +15,7 @@ public class Ad {
     private Integer score;
     private Date irrelevantSince;
 
+    //Simplify the constructor
     public Ad(Integer id,
               Typology typology,
               String description,
