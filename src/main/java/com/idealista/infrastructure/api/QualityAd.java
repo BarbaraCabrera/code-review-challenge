@@ -77,4 +77,17 @@ public class QualityAd {
     public void setIrrelevantSince(Date irrelevantSince) {
         this.irrelevantSince = irrelevantSince;
     }
+
+    /* public QualityAd createQualityAd(Ad ad, QualityAd qualityAd){
+        qualityAd.setDescription(ad.getDescription());
+            qualityAd.setGardenSize(ad.getGardenSize());
+            qualityAd.setHouseSize(ad.getHouseSize());
+            qualityAd.setId(ad.getId());
+            qualityAd.setPictureUrls(ad.getPictures().stream().map(Picture::getUrl).collect(Collectors.toList()));
+            qualityAd.setTypology(ad.getTypology().name());
+            qualityAd.setScore(ad.getScore());
+            qualityAd.setIrrelevantSince(ad.getIrrelevantSince());
+
+        return qualityAd;
+    }*/
 }

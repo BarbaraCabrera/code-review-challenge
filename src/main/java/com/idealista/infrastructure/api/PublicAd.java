@@ -58,4 +58,16 @@ public class PublicAd {
     public void setGardenSize(Integer gardenSize) {
         this.gardenSize = gardenSize;
     }
+
+   /* public PublicAd createPublicAd(Ad ad, PublicAd publicAd){
+        publicAd.setDescription(ad.getDescription());
+        publicAd.setGardenSize(ad.getGardenSize());
+        publicAd.setHouseSize(ad.getHouseSize());
+        publicAd.setId(ad.getId());
+        publicAd.setPictureUrls(ad.getPictures().stream().map(Picture::getUrl).collect(Collectors.toList()));
+        publicAd.setTypology(ad.getTypology().name());
+
+        return publicAd;
+    }*/
+
 }
